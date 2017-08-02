@@ -50,7 +50,8 @@ class PinItem extends Component {
       onKeyDown={ this.onKeyDown }
       maxLength='1'
       autoComplete='off'
-      type={ this.props.secret ? 'password' : 'text' }
+      type={ this.props.secret ? 'password' : 'tel' }
+      pattern='[0-9]*'
       className='pincode-input-text first'
       ref={ n => (this.input = n) }
       onFocus={ e => e.target.select() }
